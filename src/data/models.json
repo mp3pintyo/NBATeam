@@ -18,7 +18,7 @@
     "hasImages": true,
     "usedSkills": true,
     "verticalCompliant": true,
-    "youtubeId": null,
+    "youtubeId": "nleyWvWWgpM",
     "summary": "Subagentnek delegált, képeket mentett, a videó jól sikerült. Hangot külön kérés nélkül nem készített.",
     "scores": { "skills": null, "instruction": null, "research": null, "images": null, "video": null, "audio": null, "technical": null, "impression": null },
     "overallScore": null
@@ -66,7 +66,7 @@
     "hasImages": false,
     "usedSkills": true,
     "verticalCompliant": null,
-    "youtubeId": null,
+    "youtubeId": "8iyKk8I8W4o",
     "summary": "Valamennyi skillt használta, de a fotókat nem mentette le.",
     "scores": { "skills": null, "instruction": null, "research": null, "images": null, "video": null, "audio": null, "technical": null, "impression": null },
     "overallScore": null
@@ -162,7 +162,7 @@
     "hasImages": null,
     "usedSkills": true,
     "verticalCompliant": null,
-    "youtubeId": null,
+    "youtubeId": "5gqJOL63_5o",
     "summary": "Nem követte pontosan a skill-leírást. A szolgáltatói tokenadat és a képernyőn megjelent érték jelentősen eltért.",
     "scores": { "skills": null, "instruction": null, "research": null, "images": null, "video": null, "audio": null, "technical": null, "impression": null },
     "overallScore": null
@@ -186,7 +186,7 @@
     "hasImages": null,
     "usedSkills": true,
     "verticalCompliant": null,
-    "youtubeId": null,
+    "youtubeId": "cu-5LFmk0Mk",
     "summary": "Rossz helyen hozta létre a projektet, és hibásan állította, hogy az OmniVoice skill nincs telepítve.",
     "scores": { "skills": null, "instruction": null, "research": null, "images": null, "video": null, "audio": null, "technical": null, "impression": null },
     "overallScore": null
