@@ -22,6 +22,15 @@ npm run build
 A modellek a `src/data/models.json` fájlban vannak. A hiányzó érték maradjon
 `null`; az oldal ezt `Nincs adat` formában jeleníti meg.
 
+Modell-linkek:
+
+- `providerUrl`: az OpenRouter-, API- vagy más szolgáltatói oldal.
+- `huggingFaceUrl`: a letölthető modell Hugging Face-oldala.
+- `openSource`: kötelező `true` vagy `false` érték.
+
+Egy OpenRouteren futtatott, de letölthető modellnél mindkét URL kitölthető.
+Az `openSource` mező nem a szolgáltatót, hanem a modell letölthetőségét jelzi.
+
 Pontozáskor töltsd ki a `scores` nyolc mezőjét 0-10 közötti számmal, majd add
 meg az `overallScore` értékét is. A dobogó kizárólag az `overallScore` alapján
 épül fel, az oldal nem számol ki vagy talál ki pontokat.

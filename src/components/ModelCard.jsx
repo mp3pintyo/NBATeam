@@ -16,6 +16,9 @@ export default function ModelCard({
         <span className={`status status--${model.status}`}>
           {model.statusLabel}
         </span>
+        {model.openSource && (
+          <span className="source-badge">Open Source</span>
+        )}
       </div>
       <div className="model-card__body">
         <p className="model-card__provider">{model.provider ?? 'Adatfeltöltésre vár'}</p>

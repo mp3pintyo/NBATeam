@@ -16,6 +16,7 @@ const models = [
     costUsd: 1.5,
     hasVideo: true,
     hasAudio: true,
+    openSource: true,
     overallScore: 8.5,
   },
   {
@@ -27,6 +28,7 @@ const models = [
     costUsd: null,
     hasVideo: false,
     hasAudio: false,
+    openSource: false,
     overallScore: null,
   },
   {
@@ -38,6 +40,7 @@ const models = [
     costUsd: 0,
     hasVideo: true,
     hasAudio: false,
+    openSource: true,
     overallScore: 7,
   },
 ];
@@ -77,6 +80,14 @@ describe('filterModels', () => {
         (model) => model.id,
       ),
     ).toEqual(['gamma']);
+  });
+
+  it('returns only downloadable open-source models', () => {
+    expect(
+      filterModels(models, { query: '', filter: 'open-source' }).map(
+        (model) => model.id,
+      ),
+    ).toEqual(['alpha', 'gamma']);
   });
 });
 

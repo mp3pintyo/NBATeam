@@ -41,6 +41,7 @@ export function filterModels(models, { query = '', filter = 'all' }) {
       (filter === 'with-video' && model.hasVideo) ||
       (filter === 'with-audio' && model.hasAudio) ||
       (filter === 'free' && model.costUsd === 0) ||
+      (filter === 'open-source' && model.openSource === true) ||
       (filter === 'successful' && model.status === 'success') ||
       (filter === 'stopped' && model.status === 'stopped') ||
       (filter === 'coming-soon' && model.status === 'coming-soon');

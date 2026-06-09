@@ -11,6 +11,7 @@ export default function Filters({
     ['with-video', 'Videó készült'],
     ['with-audio', 'Van hang'],
     ['free', 'Ingyenes'],
+    ['open-source', 'Open Source'],
     ['successful', 'Sikeres'],
     ['stopped', 'Leállított'],
   ];

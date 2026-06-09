@@ -9,6 +9,7 @@ const rows = [
   ['Hang', (model) => formatBoolean(model.hasAudio)],
   ['Képek', (model) => formatBoolean(model.hasImages)],
   ['Skillhasználat', (model) => formatBoolean(model.usedSkills)],
+  ['Open Source', (model) => formatBoolean(model.openSource)],
   ['9:16 megfelelés', (model) => formatBoolean(model.verticalCompliant)],
   ['Skillhasználat pont', (model) => isNumber(model.scores.skills) ? `${model.scores.skills} / 10` : 'Nincs pontozva'],
   ['Feladatkövetés pont', (model) => isNumber(model.scores.instruction) ? `${model.scores.instruction} / 10` : 'Nincs pontozva'],

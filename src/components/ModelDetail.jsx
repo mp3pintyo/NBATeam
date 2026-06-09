@@ -32,6 +32,7 @@ export default function ModelDetail({ model, onClose }) {
             <div><dt>Videó</dt><dd>{formatBoolean(model.hasVideo)}</dd></div>
             <div><dt>Hang</dt><dd>{formatBoolean(model.hasAudio)}</dd></div>
             <div><dt>9:16</dt><dd>{formatBoolean(model.verticalCompliant)}</dd></div>
+            <div><dt>Open Source</dt><dd>{formatBoolean(model.openSource)}</dd></div>
           </dl>
           <div className="score-list">
             {Object.entries(scoreLabels).map(([key, label]) => (
@@ -43,7 +44,8 @@ export default function ModelDetail({ model, onClose }) {
             ))}
           </div>
           <div className="detail__links">
-            {model.modelUrl && <a href={model.modelUrl} target="_blank" rel="noreferrer">Modelloldal ↗</a>}
+            {model.providerUrl && <a href={model.providerUrl} target="_blank" rel="noreferrer">Szolgáltatói oldal ↗</a>}
+            {model.huggingFaceUrl && <a href={model.huggingFaceUrl} target="_blank" rel="noreferrer">Hugging Face ↗</a>}
             {model.projectPath && <code title={model.projectPath}>{model.projectPath}</code>}
           </div>
         </div>
