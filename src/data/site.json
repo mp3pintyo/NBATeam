@@ -1,0 +1,8 @@
+{
+  "mainYoutubeId": null,
+  "experimentDate": "2026-06",
+  "title": "Ki rakja össze a bajnok ötöst?",
+  "subtitle": "17 nyelvi modell ugyanazt a Hermes Agent feladatot kapta: kutassák fel minden idők legjobb NBA-játékosait, állítsanak össze egy bajnok kezdőötöst, majd készítsenek róluk látványos 9:16-os HyperFrames videót.",
+  "hermesDescription": "A Hermes Agent a Nous Research által fejlesztett nyílt forráskódú, autonóm mesterséges intelligencia rendszer. Interakciókból tanulhat, új készségeket hozhat létre, hosszú távú memóriát használhat, és összetett munkafolyamatokat automatizálhat.",
+  "taskHu": "Kik a legjobb NBA játékosok all time? Ki lenne az az 5 játékos, akiből összeraknál egy leendő bajnok csapatot? Kutass utánuk az interneten, használj minden elérhető Hermes Agent skillt és eszközt, majd készíts az öt játékosról látványos, mozgalmas, fotókat is tartalmazó 9:16-os HyperFrames videót."
+}
