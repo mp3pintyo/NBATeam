@@ -23,7 +23,7 @@
     "youtubeId": "nleyWvWWgpM",
     "summary": "Subagentnek delegált, képeket mentett, a videó jól sikerült. Hangot külön kérés nélkül nem készített.",
     "scores": { "skills": null, "instruction": null, "research": null, "images": null, "video": null, "audio": null, "technical": null, "impression": null },
-    "overallScore": null
+    "overallScore": 6.5
   },
   {
     "id": "lfm2-24b-a2b",
@@ -49,7 +49,7 @@
     "youtubeId": null,
     "summary": "A futás használhatatlan eredményt adott; valószínűleg túl kicsi volt az elérhető kimeneti keret.",
     "scores": { "skills": null, "instruction": null, "research": null, "images": null, "video": null, "audio": null, "technical": null, "impression": null },
-    "overallScore": null
+    "overallScore": 0
   },
   {
     "id": "gemma-4-12b",
@@ -74,8 +74,8 @@
     "verticalCompliant": null,
     "youtubeId": "8iyKk8I8W4o",
     "summary": "Valamennyi skillt használta, de a fotókat nem mentette le.",
-    "scores": { "skills": null, "instruction": null, "research": null, "images": null, "video": null, "audio": null, "technical": null, "impression": null },
-    "overallScore": null
+    "scores": { "skills": null, "instruction": null, "research": null, "images": 0, "video": 1, "audio": 0, "technical": null, "impression": null },
+    "overallScore": 1
   },
   {
     "id": "carnice-qwen-35b",

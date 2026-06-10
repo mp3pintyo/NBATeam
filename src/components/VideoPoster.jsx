@@ -44,7 +44,7 @@ export default function VideoPoster({
       <span className="play-button" aria-hidden="true">
         {youtubeId ? '▶' : '—'}
       </span>
-      {!youtubeId && <span className="poster-empty">Videó hamarosan</span>}
+      {!youtubeId && <span className="poster-empty">Videót nem generált</span>}
     </button>
   );
 }
