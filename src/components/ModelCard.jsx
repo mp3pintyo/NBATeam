@@ -1,4 +1,4 @@
-import { formatMoney, formatNumber } from '../lib/format.js';
+import { formatDualMoney, formatNumber } from '../lib/format.js';
 import VideoPoster from './VideoPoster.jsx';
 
 export default function ModelCard({
@@ -8,17 +8,31 @@ export default function ModelCard({
   onToggleCompare,
 }) {
   const comingSoon = model.status === 'coming-soon';
+  const overallScore = Number.isFinite(model.overallScore)
+    ? `${model.overallScore} / 10`
+    : '—';
 
   return (
     <article className={`model-card model-card--${model.status}`}>
       <div className="model-card__media">
         <VideoPoster youtubeId={model.youtubeId} title={model.name} />
-        <span className={`status status--${model.status}`}>
-          {model.statusLabel}
-        </span>
-        {model.openSource && (
-          <span className="source-badge">Open Source</span>
-        )}
+        <div
+          className="model-card__score-badge"
+          aria-label={`${model.name} összpontszám: ${overallScore}`}
+        >
+          <strong>{Number.isFinite(model.overallScore) ? model.overallScore : '—'}</strong>
+        </div>
+        <div
+          className="model-card__meta-badges"
+          aria-label={`${model.name} állapot metaadatai`}
+        >
+          <span className={`status status--${model.status}`}>
+            {model.statusLabel}
+          </span>
+          {model.openSource && (
+            <span className="source-badge">Open Source</span>
+          )}
+        </div>
       </div>
       <div className="model-card__body">
         <p className="model-card__provider">{model.provider ?? 'Adatfeltöltésre vár'}</p>
@@ -37,7 +51,7 @@ export default function ModelCard({
           </span>
           <span>
             <small>Költség</small>
-            {formatMoney(model.costUsd)}
+            {formatDualMoney(model.costUsd, model.costHuf)}
           </span>
         </div>
         <p className="model-card__summary">{model.summary}</p>

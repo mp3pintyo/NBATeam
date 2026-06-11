@@ -1,10 +1,10 @@
-import { formatBoolean, formatMoney, formatNumber, isNumber } from '../lib/format.js';
+import { formatBoolean, formatDualMoney, formatNumber, isNumber } from '../lib/format.js';
 import Dialog from './Dialog.jsx';
 
 const rows = [
   ['Futási idő', (model) => model.durationMinutes ? `${model.durationMinutes} perc` : 'Nincs adat'],
   ['Token', (model) => isNumber(model.tokensMillions) ? `${formatNumber(model.tokensMillions)} M` : 'Nincs adat'],
-  ['Költség', (model) => formatMoney(model.costUsd)],
+  ['Költség', (model) => formatDualMoney(model.costUsd, model.costHuf)],
   ['Videó', (model) => formatBoolean(model.hasVideo)],
   ['Hang', (model) => formatBoolean(model.hasAudio)],
   ['Képek', (model) => formatBoolean(model.hasImages)],

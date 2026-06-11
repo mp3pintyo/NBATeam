@@ -1,6 +1,6 @@
 // @vitest-environment jsdom
 import '@testing-library/jest-dom/vitest';
-import { cleanup, render, screen } from '@testing-library/react';
+import { cleanup, render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { afterEach, describe, expect, it } from 'vitest';
 import App from './App.jsx';
@@ -57,5 +57,37 @@ describe('App', () => {
     expect(
       screen.queryByRole('link', { name: /szolgáltatói oldal/i }),
     ).not.toBeInTheDocument();
+  });
+
+  it('shows dual-currency costs on cards, detail, and compare views', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+
+    expect(screen.getByText('$0,245 / 75 Ft')).toBeVisible();
+
+    await user.click(
+      screen.getByRole('button', { name: /minimax m3 részletei/i }),
+    );
+
+    expect(
+      within(screen.getByRole('dialog', { name: /minimax m3/i })).getByText('$0,245 / 75 Ft'),
+    ).toBeVisible();
+
+    await user.click(screen.getByRole('button', { name: /bezárás/i }));
+
+    const search = screen.getByRole('searchbox', { name: /modell keresése/i });
+
+    await user.clear(search);
+    await user.type(search, 'MiniMax M3');
+    await user.click(screen.getByRole('checkbox', { name: /összevetés/i }));
+
+    await user.clear(search);
+    await user.type(search, 'DeepSeek V4 Pro');
+    await user.click(screen.getByRole('checkbox', { name: /összevetés/i }));
+
+    await user.click(screen.getByRole('button', { name: /összevetés/i }));
+
+    const compareDialog = screen.getByRole('dialog', { name: /modellek összevetése/i });
+    expect(within(compareDialog).getByText('$0,245 / 75 Ft')).toBeVisible();
   });
 });

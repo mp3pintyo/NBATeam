@@ -1,4 +1,4 @@
-import { formatBoolean, formatMoney, formatNumber, isNumber } from '../lib/format.js';
+import { formatBoolean, formatDualMoney, formatNumber, isNumber } from '../lib/format.js';
 import Dialog from './Dialog.jsx';
 import VideoPoster from './VideoPoster.jsx';
 
@@ -28,7 +28,7 @@ export default function ModelDetail({ model, onClose }) {
           <dl className="detail-metrics">
             <div><dt>Futási idő</dt><dd>{model.durationMinutes ? `${model.durationMinutes} perc` : 'Nincs adat'}</dd></div>
             <div><dt>Token</dt><dd>{isNumber(model.tokensMillions) ? `${formatNumber(model.tokensMillions)} millió` : 'Nincs adat'}</dd></div>
-            <div><dt>Költség</dt><dd>{formatMoney(model.costUsd)}</dd></div>
+            <div><dt>Költség</dt><dd>{formatDualMoney(model.costUsd, model.costHuf)}</dd></div>
             <div><dt>Videó</dt><dd>{formatBoolean(model.hasVideo)}</dd></div>
             <div><dt>Hang</dt><dd>{formatBoolean(model.hasAudio)}</dd></div>
             <div><dt>9:16</dt><dd>{formatBoolean(model.verticalCompliant)}</dd></div>
