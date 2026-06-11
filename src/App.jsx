@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import models from './data/models.json';
 import site from './data/site.json';
 import { toggleComparison } from './lib/comparison.js';
@@ -26,6 +26,14 @@ export default function App() {
   const [selectedIds, setSelectedIds] = useState([]);
   const [compareError, setCompareError] = useState(null);
   const [compareOpen, setCompareOpen] = useState(false);
+  const modelCount = models.length;
+  const siteContent = useMemo(
+    () => ({
+      ...site,
+      subtitle: site.subtitle.replace('{modelCount}', String(modelCount)),
+    }),
+    [modelCount],
+  );
 
   const visibleModels = useMemo(
     () => sortModels(filterModels(models, { query, filter }), sort),
@@ -41,6 +49,15 @@ export default function App() {
     setCompareError(result.error);
   };
 
+  useEffect(() => {
+    const description = `${modelCount} nyelvi modell Hermes Agent tesztje: kutatás, skillhasználat és NBA HyperFrames videók összehasonlítása.`;
+    const metaDescription = document.querySelector('meta[name="description"]');
+
+    if (metaDescription) {
+      metaDescription.setAttribute('content', description);
+    }
+  }, [modelCount]);
+
   return (
     <>
       <a className="skip-link" href="#modellek">Ugrás a modellekhez</a>
@@ -54,7 +71,7 @@ export default function App() {
         </div>
       </nav>
       <main>
-        <Hero site={site} />
+        <Hero site={siteContent} modelCount={modelCount} />
         <Scoreboard aggregates={calculateAggregates(models)} />
         <div id="ranglista"><Podium ranked={getRankedModels(models)} /></div>
         <section className="section field-section" id="modellek" aria-labelledby="field-title">
@@ -81,7 +98,7 @@ export default function App() {
       </main>
       <footer>
         <a className="brand" href="#top">Hermes <strong>Model League</strong></a>
-        <p>17 modell. Egy feladat. Az adatok beszélnek.</p>
+        <p>{modelCount} modell. Egy feladat. Az adatok beszélnek.</p>
       </footer>
       <CompareTray
         models={selectedModels}

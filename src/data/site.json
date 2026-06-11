@@ -2,7 +2,7 @@
   "mainYoutubeId": "xbNh8JzyNTg",
   "experimentDate": "2026-06",
   "title": "Ki rakja össze a bajnok ötöst?",
-  "subtitle": "22 nyelvi modell ugyanazt a Hermes Agent feladatot kapta: kutassák fel minden idők legjobb NBA-játékosait, állítsanak össze egy bajnok kezdőötöst, majd készítsenek róluk látványos 9:16-os HyperFrames videót.",
+  "subtitle": "{modelCount} nyelvi modell ugyanazt a Hermes Agent feladatot kapta: kutassák fel minden idők legjobb NBA-játékosait, állítsanak össze egy bajnok kezdőötöst, majd készítsenek róluk látványos 9:16-os HyperFrames videót.",
   "hermesDescription": "A Hermes Agent a Nous Research által fejlesztett nyílt forráskódú, autonóm mesterséges intelligencia rendszer. Interakciókból tanulhat, új készségeket hozhat létre, hosszú távú memóriát használhat, és összetett munkafolyamatokat automatizálhat.",
   "taskHu": "Kik a legjobb NBA játékosok all time? Ki lenne az az 5 játékos, akiből összeraknál egy leendő bajnok csapatot? Kutass utánuk az interneten, használj minden elérhető Hermes Agent skillt és eszközt, majd készíts az öt játékosról látványos, mozgalmas, fotókat is tartalmazó 9:16-os HyperFrames videót.",
   "taskEn": "Who are the best NBA players of all time? Who would be the 5 players you would put together for a future championship team? Search for them on the internet. Of course, there may be old players who are no longer playing. Use every Hermes Agent skill and tool you can to complete the task. Then make a hyperframe video of the 5 players. 9:16 aspect ratio. spectacular, moving effects. The video should also include their photo."

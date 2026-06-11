@@ -14,12 +14,14 @@ describe('App', () => {
 
     await user.type(
       screen.getByRole('searchbox', { name: /modell keresése/i }),
-      'Nex N2',
+      'Nex-N2',
     );
 
-    expect(screen.getByRole('heading', { name: 'Nex N2 Pro' })).toBeVisible();
     expect(
-      screen.queryByRole('heading', { name: 'Qwen 3.6 27B' }),
+      screen.getByRole('button', { name: /nex agi: nex-n2-pro részletei/i }),
+    ).toBeVisible();
+    expect(
+      screen.queryByRole('button', { name: /qwen 3\.6 27b részletei/i }),
     ).not.toBeInTheDocument();
   });
 
