@@ -571,11 +571,36 @@
     "scores": { "skills": null, "instruction": null, "research": null, "images": null, "video": null, "audio": null, "technical": null, "impression": null },
     "overallScore": null
   },
-
   {
-    "id": "nvidia-nemotron-3-ultra",
-    "name": "NVIDIA: Nemotron 3 Ultra",
-    "variant": "nvidia/nemotron-3-ultra:free",
+    "id": "inclusionai-ling-2-6-1t",
+    "name": "inclusionAI: Ling-2.6-1T",
+    "variant": "inclusionai/ling-2-6-1t",
+    "provider": "OpenRouter · ingyenes",
+    "providerUrl": "https://openrouter.ai/inclusionai/ling-2.6-1t",
+    "huggingFaceUrl": "https://huggingface.co/inclusionAI/Ling-2.6-1T",
+    "openSource": true,
+    "projectPath": null,
+    "status": "failed",
+    "statusLabel": "Weboldalt csinált",
+    "durationMinutes": 4,
+    "tokensMillions": 2.04,
+    "displayedTokensThousands": null,
+    "costUsd": 0.0691,
+    "costHuf": 21,
+    "hasVideo": false,
+    "hasAudio": false,
+    "hasImages": false,
+    "usedSkills": false,
+    "verticalCompliant": null,
+    "youtubeId": null,
+    "summary": "Skilleket nem keresett. Rossz projekt skill. Csak 1 db html fájlt hozott létre. Nincs kép, hang, videó. Weboldalt csinált és nem videót!",
+    "scores": { "skills": 0, "instruction": null, "research": null, "images": 0, "video": 0, "audio": 0, "technical": null },
+    "overallScore": 0
+  },
+  {
+    "id": "nvidia-nemotron-3-ultra-550b-a55b",
+    "name": "NVIDIA: Nemotron 3 Ultra 550B A55B",
+    "variant": "nvidia/nemotron-3-ultra-550b-a55b:free",
     "provider": "OpenRouter · ingyenes",
     "providerUrl": "https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free",
     "huggingFaceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
@@ -593,9 +618,9 @@
     "hasImages": true,
     "usedSkills": true,
     "verticalCompliant": null,
-    "youtubeId": "Ii5RdbDLYKc",
+    "youtubeId": null,
     "summary": "Projekt skillt nem tudja használni. Rengetegszer újraírta a HTML kódot. Fotókat lementette. TTS nincs.",
-    "scores": { "skills": null, "instruction": null, "research": null, "images": null, "video": null, "audio": null, "technical": null },
+    "scores": { "skills": null, "instruction": null, "research": null, "images": null, "video": null, "audio": 0, "technical": null },
     "overallScore": null
   }
 ]
