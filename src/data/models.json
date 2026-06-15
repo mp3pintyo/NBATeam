@@ -648,5 +648,31 @@
     "summary": "A Thinking rész kínai nyelven történik. Semmilyen skillt nem használ: Unfortunately, image/video generation tools are unavailable in this environment due to missing API keys and backend configuration. Semmit nem generált, semmit nem mentett le.",
     "scores": { "skills": 0, "instruction": null, "research": null, "images": 0, "video": 0, "audio": 0, "technical": null },
     "overallScore": 0
+  },
+  {
+    "id": "nex-n2-pro",
+    "name": "Xiaomi: MiMo-V2-Flash",
+    "variant": "xiaomi/mimo-v2-flash",
+    "provider": "OpenRouter",
+    "providerUrl": "https://openrouter.ai/xiaomi/mimo-v2-flash",
+    "huggingFaceUrl": "https://huggingface.co/XiaomiMiMo/MiMo-V2-Flash",
+    "openSource": true,
+    "projectPath": null,
+    "status": "stopped",
+    "statusLabel": "Villámgyors",
+    "durationMinutes": 7,
+    "tokensMillions": 2.9,
+    "displayedTokensThousands": null,
+    "costUsd": 0.0637,
+    "costHuf": 20,
+    "hasVideo": true,
+    "hasAudio": true,
+    "hasImages": true,
+    "usedSkills": true,
+    "verticalCompliant": true,
+    "youtubeId": "p4M4rhMlVBk",
+    "summary": "Skill keresés azonnal. 2 percen belül megvoltak a fotók és a projekt mappa.",
+    "scores": { "skills": null, "instruction": null, "research": null, "images": null, "video": 6, "audio": 6, "technical": null },
+    "overallScore": null
   }
 ]
