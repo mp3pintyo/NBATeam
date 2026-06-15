@@ -334,8 +334,8 @@
     "verticalCompliant": null,
     "youtubeId": "lQDbA55crUI",
     "summary": "Kiváló TODO-lista, azonnali skillkeresés és jó OmniVoice-használat, de belezavarodott a saját könyvtáraiba. A free változat leállt.",
-    "scores": { "skills": null, "instruction": null, "research": null, "images": null, "video": null, "audio": null, "technical": null, "impression": null },
-    "overallScore": null
+    "scores": { "skills": 8, "instruction": null, "research": null, "images": null, "video": 8, "audio": 7, "technical": null, "impression": null },
+    "overallScore": 8
   },
   {
     "id": "laguna-m1",
@@ -650,7 +650,7 @@
     "overallScore": 0
   },
   {
-    "id": "nex-n2-pro",
+    "id": "xiaomi-mimo-v2-flash",
     "name": "Xiaomi: MiMo-V2-Flash",
     "variant": "xiaomi/mimo-v2-flash",
     "provider": "OpenRouter",
