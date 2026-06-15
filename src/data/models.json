@@ -570,5 +570,32 @@
     "summary": "Skill kereséssel indult, visszakérdezett a feladatra. A Tavily-t nem tudta használni. Rossz helyen hozta létre a projekt mappát, és végül semmit nem mentett le. Állandóan megáll.",
     "scores": { "skills": null, "instruction": null, "research": null, "images": null, "video": null, "audio": null, "technical": null, "impression": null },
     "overallScore": null
+  },
+
+  {
+    "id": "nvidia-nemotron-3-ultra",
+    "name": "NVIDIA: Nemotron 3 Ultra",
+    "variant": "nvidia/nemotron-3-ultra:free",
+    "provider": "OpenRouter · ingyenes",
+    "providerUrl": "https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free",
+    "huggingFaceUrl": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+    "openSource": true,
+    "projectPath": null,
+    "status": "partial",
+    "statusLabel": "Rengeteg javítás",
+    "durationMinutes": 60,
+    "tokensMillions": null,
+    "displayedTokensThousands": null,
+    "costUsd": 0,
+    "costHuf": 0,
+    "hasVideo": true,
+    "hasAudio": false,
+    "hasImages": true,
+    "usedSkills": true,
+    "verticalCompliant": null,
+    "youtubeId": "Ii5RdbDLYKc",
+    "summary": "Projekt skillt nem tudja használni. Rengetegszer újraírta a HTML kódot. Fotókat lementette. TTS nincs.",
+    "scores": { "skills": null, "instruction": null, "research": null, "images": null, "video": null, "audio": null, "technical": null },
+    "overallScore": null
   }
 ]
