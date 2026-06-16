@@ -256,8 +256,8 @@
     "verticalCompliant": null,
     "youtubeId": "PEKdwi72MBA",
     "summary": "Tavilyt és Browser Use-t használt, de a skilleket nem követte megfelelően, és a kötelező OmniVoice helyett edge-tts-t választott.",
-    "scores": { "skills": null, "instruction": null, "research": null, "images": null, "video": null, "audio": null, "technical": null, "impression": null },
-    "overallScore": null
+    "scores": { "skills": 5, "instruction": null, "research": null, "images": 5, "video": null, "audio": 7, "technical": null, "impression": null },
+    "overallScore": 6
   },
   {
     "id": "claude-haiku-4-5",
@@ -282,8 +282,8 @@
     "verticalCompliant": null,
     "youtubeId": "KQUXJq6Z87g",
     "summary": "Tavilyt használt és a projekt skillt tökéletesen követte, de a fotókat nem töltötte le.",
-    "scores": { "skills": null, "instruction": null, "research": null, "images": null, "video": null, "audio": null, "technical": null, "impression": null },
-    "overallScore": null
+    "scores": { "skills": null, "instruction": null, "research": null, "images": 0, "video": null, "audio": 8, "technical": null, "impression": null },
+    "overallScore": 6
   },
   {
     "id": "nex-n2-pro",
@@ -308,8 +308,8 @@
     "verticalCompliant": true,
     "youtubeId": "NftUCfbDkI8",
     "summary": "Szép TODO-listát épített, azonnal keresett skilleket, jól használta a projekt skillt, mentett fotókat és elég jó videót készített.",
-    "scores": { "skills": null, "instruction": null, "research": null, "images": null, "video": null, "audio": null, "technical": null, "impression": null },
-    "overallScore": null
+    "scores": { "skills": 10, "instruction": null, "research": 10, "images": null, "video": null, "audio": 0, "technical": null, "impression": null },
+    "overallScore": 9
   },
   {
     "id": "kimi-k2-6",
