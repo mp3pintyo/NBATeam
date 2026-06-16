@@ -674,5 +674,31 @@
     "summary": "Skill keresés azonnal. 2 percen belül megvoltak a fotók és a projekt mappa.",
     "scores": { "skills": null, "instruction": null, "research": null, "images": null, "video": 6, "audio": 6, "technical": null },
     "overallScore": null
+  },
+  {
+    "id": "xiaomi-mimo-v2-5-pro",
+    "name": "Xiaomi: MiMo-V2.5-Pro",
+    "variant": "xiaomi/mimo-v2.5-pro",
+    "provider": "OpenRouter",
+    "providerUrl": "https://openrouter.ai/xiaomi/mimo-v2.5-pro",
+    "huggingFaceUrl": null,
+    "openSource": false,
+    "projectPath": null,
+    "status": "success",
+    "statusLabel": "Szép design",
+    "durationMinutes": 17,
+    "tokensMillions": 5.96,
+    "displayedTokensThousands": null,
+    "costUsd": 0.166,
+    "costHuf": 51,
+    "hasVideo": true,
+    "hasAudio": false,
+    "hasImages": true,
+    "usedSkills": true,
+    "verticalCompliant": true,
+    "youtubeId": "oBkyFLLayF4",
+    "summary": "Projekt skill jó. Azonnal skill keresés. Videó ellenőrzés. Szép design, szép elosztás",
+    "scores": { "skills": 9, "instruction": 10, "research": 10, "images": 10, "video": 9, "audio": 0, "technical": 9 },
+    "overallScore": 9
   }
 ]
