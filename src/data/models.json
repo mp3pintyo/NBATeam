@@ -669,11 +669,11 @@
     "hasAudio": true,
     "hasImages": true,
     "usedSkills": true,
-    "verticalCompliant": true,
+    "verticalCompliant": false,
     "youtubeId": "p4M4rhMlVBk",
     "summary": "Skill keresés azonnal. 2 percen belül megvoltak a fotók és a projekt mappa.",
     "scores": { "skills": null, "instruction": null, "research": null, "images": null, "video": 6, "audio": 6, "technical": null },
-    "overallScore": null
+    "overallScore": 6.5
   },
   {
     "id": "xiaomi-mimo-v2-5-pro",
@@ -725,7 +725,7 @@
     "youtubeId": "SNFmA1YkSb8",
     "summary": "Azonnal skillek listázása. Sokféle skillt használt a feladathoz. Az elkészült videót leellenőrizte. TTS nincs. 9:16-ot nagyon jól kezeli. Szép animáció.",
     "scores": { "skills": 10, "instruction": 10, "research": 10, "images": 10, "video": 9, "audio": 0, "technical": 9 },
-    "overallScore": 9.5
+    "overallScore": 9
   },
   {
     "id": "xiaomi-mimo-v2-5",
@@ -778,5 +778,31 @@
     "summary": "Projekt skillt nem tudja rendesen használni. TTS nincs. 9:16-ot maximálisan kihasználja.",
     "scores": { "skills": null, "instruction": null, "research": null, "images": null, "video": null, "audio": 0, "technical": null },
     "overallScore": 8.5
+  },
+  {
+    "id": "minimax-m2.7",
+    "name": "MiniMax M2.7",
+    "variant": "minimax-m2.7",
+    "provider": "OpenCode Go",
+    "providerUrl": "https://openrouter.ai/minimax/minimax-m2.7",
+    "huggingFaceUrl": "https://huggingface.co/MiniMaxAI/MiniMax-M2.7",
+    "openSource": true,
+    "projectPath": null,
+    "status": "failed",
+    "statusLabel": "Letöltés probléma",
+    "durationMinutes": 25,
+    "tokensMillions": 0.641,
+    "displayedTokensThousands": null,
+    "costUsd": 0.08,
+    "costHuf": 24,
+    "hasVideo": false,
+    "hasAudio": false,
+    "hasImages": false,
+    "usedSkills": true,
+    "verticalCompliant": false,
+    "youtubeId": null,
+    "summary": "Azonnal skill használat. Projekt skill jó használata. Nem tudja letölteni a fotókat. 25 perc után kényszerített leállítás.",
+    "scores": { "skills": null, "instruction": null, "research": null, "images": null, "video": null, "audio": 0, "technical": null },
+    "overallScore": 1
   }
 ]
