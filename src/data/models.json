@@ -752,5 +752,31 @@
     "summary": "Cache hit rate 93%! Nagyon szépen használja az álló formátumot. Jól olvasható. Projekt skillt nem használja. TTS nincs.",
     "scores": { "skills": 6, "instruction": null, "research": null, "images": 10, "video": 8, "audio": 0, "technical": null },
     "overallScore": 8.5
+  },
+  {
+    "id": "qwen-3.7-max",
+    "name": "Qwen 3.7 Max",
+    "variant": "qwen-3-7-max",
+    "provider": "OpenCode Go",
+    "providerUrl": "https://openrouter.ai/qwen/qwen3.7-max",
+    "huggingFaceUrl": null,
+    "openSource": false,
+    "projectPath": null,
+    "status": "success",
+    "statusLabel": "Képgenerálás",
+    "durationMinutes": 9,
+    "tokensMillions": 0.785,
+    "displayedTokensThousands": 80,
+    "costUsd": 1.05,
+    "costHuf": 315,
+    "hasVideo": true,
+    "hasAudio": false,
+    "hasImages": true,
+    "usedSkills": true,
+    "verticalCompliant": true,
+    "youtubeId": "OkE_L8SpFV4",
+    "summary": "Projekt skillt nem tudja rendesen használni. TTS nincs. 9:16-ot maximálisan kihasználja.",
+    "scores": { "skills": null, "instruction": null, "research": null, "images": null, "video": null, "audio": 0, "technical": null },
+    "overallScore": 8.5
   }
 ]
