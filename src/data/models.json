@@ -177,9 +177,9 @@
     "usedSkills": true,
     "verticalCompliant": null,
     "youtubeId": "5gqJOL63_5o",
-    "summary": "Nem követte pontosan a skill-leírást. A szolgáltatói tokenadat és a képernyőn megjelent érték jelentősen eltért.",
-    "scores": { "skills": null, "instruction": null, "research": null, "images": null, "video": null, "audio": null, "technical": null, "impression": null },
-    "overallScore": null
+    "summary": "Nem követte pontosan a skill-leírást. Tökéletes kihasználása a 9:16-os képaránynak.",
+    "scores": { "skills": 6, "instruction": null, "research": null, "images": null, "video": 9, "audio": 0, "technical": null, "impression": null },
+    "overallScore": 9
   },
   {
     "id": "deepseek-v4-pro",
@@ -700,5 +700,31 @@
     "summary": "Projekt skill jó. Azonnal skill keresés. Videó ellenőrzés. Szép design, szép elosztás",
     "scores": { "skills": 9, "instruction": 10, "research": 10, "images": 10, "video": 9, "audio": 0, "technical": 9 },
     "overallScore": 9
+  },
+  {
+    "id": "moonshotai-kimi-k2-7-code",
+    "name": "MoonshotAI: Kimi K2.7 Code",
+    "variant": "moonshotai/kimi-k2.7-code",
+    "provider": "OpenRouter",
+    "providerUrl": "https://openrouter.ai/moonshotai/kimi-k2.7-code",
+    "huggingFaceUrl": "https://huggingface.co/moonshotai/Kimi-K2.7-Code",
+    "openSource": true,
+    "projectPath": null,
+    "status": "success",
+    "statusLabel": "Sokféle skill",
+    "durationMinutes": 18,
+    "tokensMillions": 2.54,
+    "displayedTokensThousands": null,
+    "costUsd": 0.963,
+    "costHuf": 297,
+    "hasVideo": true,
+    "hasAudio": false,
+    "hasImages": true,
+    "usedSkills": true,
+    "verticalCompliant": true,
+    "youtubeId": null,
+    "summary": "Azonnal skillek listázása. Sokféle skillt használt a feladathoz. Az elkészült videót leellenőrizte. TTS nincs. 9:16-ot nagyon jól kezeli. Szép animáció.",
+    "scores": { "skills": 10, "instruction": 10, "research": 10, "images": 10, "video": 9, "audio": 0, "technical": 9 },
+    "overallScore": 9.5
   }
 ]
