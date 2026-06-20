@@ -513,11 +513,11 @@
     "hasAudio": false,
     "hasImages": true,
     "usedSkills": false,
-    "verticalCompliant": null,
+    "verticalCompliant": false,
     "youtubeId": null,
     "summary": "TODO lista létrehozása. Menet közben nem jelöli, hogy halad rajta. Videót nem generálja le. TTS-t nem tudta futtatni.",
     "scores": { "skills": null, "instruction": null, "research": null, "images": null, "video": null, "audio": null, "technical": null, "impression": null },
-    "overallScore": null
+    "overallScore": 1
   },
   {
     "id": "openai-gpt-oss-120b-free",
