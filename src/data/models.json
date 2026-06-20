@@ -435,11 +435,11 @@
     "hasAudio": false,
     "hasImages": false,
     "usedSkills": false,
-    "verticalCompliant": null,
+    "verticalCompliant": false,
     "youtubeId": null,
-    "summary": "A modell neve és futási adatai később kerülnek feltöltésre.",
+    "summary": "Nem csinált semmit",
     "scores": { "skills": null, "instruction": null, "research": null, "images": null, "video": null, "audio": null, "technical": null, "impression": null },
-    "overallScore": null
+    "overallScore": 0
   },
   {
     "id": "qwen3-7-plus",
@@ -565,11 +565,11 @@
     "hasAudio": false,
     "hasImages": false,
     "usedSkills": true,
-    "verticalCompliant": null,
+    "verticalCompliant": false,
     "youtubeId": null,
     "summary": "Skill kereséssel indult, visszakérdezett a feladatra. A Tavily-t nem tudta használni. Rossz helyen hozta létre a projekt mappát, és végül semmit nem mentett le. Állandóan megáll.",
     "scores": { "skills": null, "instruction": null, "research": null, "images": null, "video": null, "audio": null, "technical": null, "impression": null },
-    "overallScore": null
+    "overallScore": 0
   },
   {
     "id": "inclusionai-ling-2-6-1t",
@@ -591,7 +591,7 @@
     "hasAudio": false,
     "hasImages": false,
     "usedSkills": false,
-    "verticalCompliant": null,
+    "verticalCompliant": false,
     "youtubeId": null,
     "summary": "Skilleket nem keresett. Rossz projekt skill. Csak 1 db html fájlt hozott létre. Nincs kép, hang, videó. Weboldalt csinált és nem videót!",
     "scores": { "skills": 0, "instruction": null, "research": null, "images": 0, "video": 0, "audio": 0, "technical": null },
@@ -617,11 +617,11 @@
     "hasAudio": false,
     "hasImages": true,
     "usedSkills": true,
-    "verticalCompliant": null,
-    "youtubeId": null,
+    "verticalCompliant": false,
+    "youtubeId": "Ii5RdbDLYKc",
     "summary": "Projekt skillt nem tudja használni. Rengetegszer újraírta a HTML kódot. Fotókat lementette. TTS nincs.",
     "scores": { "skills": null, "instruction": null, "research": null, "images": null, "video": null, "audio": 0, "technical": null },
-    "overallScore": null
+    "overallScore": 6.5
   },
   {
     "id": "bytedance-seed-1-6-flash",
