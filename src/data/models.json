@@ -908,5 +908,31 @@
     "summary": "Azonnal skill kereséssel és projekt létrehozással indult. Szép összefoglalót adott a végén, de a videóban furcsa volt a helyesírás, és TTS nem készült.",
     "scores": { "skills": null, "instruction": null, "research": null, "images": null, "video": null, "audio": 0, "technical": null, "impression": null },
     "overallScore": 8
+  },
+  {
+    "id": "ornith-1-0-35b",
+    "name": "DeepReinforce Team: Ornith 1.0 35B",
+    "variant": "deepreinforce/ornith-1.0-35b-gguf",
+    "provider": "Helyi · LM Studio",
+    "providerUrl": null,
+    "huggingFaceUrl": "https://huggingface.co/deepreinforce-ai/Ornith-1.0-35B-GGUF",
+    "openSource": true,
+    "projectPath": null,
+    "status": "failed",
+    "statusLabel": "Képeket generált",
+    "durationMinutes": 10,
+    "tokensMillions": null,
+    "displayedTokensThousands": null,
+    "costUsd": 0,
+    "costHuf": 0,
+    "hasVideo": false,
+    "hasAudio": false,
+    "hasImages": false,
+    "usedSkills": false,
+    "verticalCompliant": false,
+    "youtubeId": null,
+    "summary": "A képeket nem mentette le hanem generált helyette de azokat sem mentette le. TTS nincsen. Videót nem generált.",
+    "scores": { "skills": null, "instruction": null, "research": null, "images": 0, "video": 0, "audio": 0, "technical": null, "impression": null },
+    "overallScore": 0
   }
 ]
