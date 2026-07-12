@@ -1,24 +1,23 @@
 import VideoPoster from './VideoPoster.jsx';
 
-export default function Hero({ site, modelCount }) {
+export default function Hero({ test, modelCount }) {
   return (
     <header className="hero" id="top">
       <div className="hero__copy">
-        <p className="eyebrow">{modelCount} modell · egy azonos feladat</p>
-        <h1>{site.title}</h1>
-        <p className="hero__lead">{site.subtitle}</p>
+        <h1>{test.headline}</h1>
+        <p className="hero__lead">{test.description.replace('{modelCount}', String(modelCount))}</p>
         <div className="hero__actions">
           <a className="button button--primary" href="#modellek">
-            Eredmények
+            Aktív teszt eredményei
           </a>
           <a className="button button--ghost" href="#modszertan">
-            Módszertan
+            Prompt megnyitása
           </a>
         </div>
       </div>
       <VideoPoster
-        youtubeId={site.mainYoutubeId}
-        title={`A teljes ${modelCount} modelles teszt`}
+        youtubeId={test.mainYoutubeId}
+        title={`${test.shortTitle} – ${modelCount} modell tesztje`}
         ratio="wide"
       />
     </header>

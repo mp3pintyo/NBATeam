@@ -8,6 +8,17 @@ import App from './App.jsx';
 afterEach(cleanup);
 
 describe('App', () => {
+  it('switches the complete result surface between test prompts', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+
+    await user.click(screen.getByRole('button', { name: /teszt 02 — nba film challenge/i }));
+
+    expect(screen.getByRole('heading', { name: /ugyanazok a modellek/i })).toBeVisible();
+    expect(screen.getByText(/az új prompt szövege még véglegesítésre vár/i)).toBeVisible();
+    expect(screen.queryByRole('button', { name: /qwen 3\.6 27b részletei/i })).not.toBeInTheDocument();
+  });
+
   it('filters models by search text', async () => {
     const user = userEvent.setup();
     render(<App />);

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "gpt-5-6-sol-med",
+    "name": "GPT-5.6 Sol Medium",
+    "variant": "gpt-5.6-sol-med",
+    "provider": "Codex",
+    "providerUrl": "https://openrouter.ai/openai/gpt-5.6-sol",
+    "huggingFaceUrl": null,
+    "openSource": false,
+    "projectPath": null,
+    "status": "success",
+    "statusLabel": "Elképesztő grafika",
+    "durationMinutes": 19,
+    "tokensMillions": null,
+    "displayedTokensThousands": null,
+    "costUsd": 0,
+    "costHuf": 0,
+    "hasVideo": true,
+    "hasAudio": true,
+    "hasImages": true,
+    "usedSkills": true,
+    "verticalCompliant": true,
+    "youtubeId": "L7CpKdj_yO0",
+    "summary": "Azonnal kereste a skilleket. Ellenőrizte az OmniVoice Dockert. Task lista 7 lépéssel és 3 subagent. Sokkal jobban követi a Terra és Luna modelleknél a projekt szerkezet skillt. Letöltött 2 betűtípust. Nagyon jó minőségű képeket töltött le. Nem a szokásos rossz felbontásúakat. 10 képkockát ellenőriz amiből az egyik egy összevont nagy. Nagyon nagyon részletes leírás. Rettentően rövid videó. 27 sec",
+    "scores": { "skills": 10, "instruction": 10, "research": 10, "images": 10, "video": 9, "audio": 10, "technical": 10, "impression": 10 },
+    "overallScore": 9.5
+  }
+]

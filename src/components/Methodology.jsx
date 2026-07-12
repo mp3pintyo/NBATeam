@@ -9,15 +9,15 @@ const categories = [
   'Összbenyomás',
 ];
 
-export default function Methodology({ site }) {
+export default function Methodology({ test, hermesDescription }) {
   return (
     <section className="methodology" id="modszertan" aria-labelledby="method-title">
       <div>
         <p className="eyebrow">A kísérlet háttere</p>
         <h2 id="method-title">Módszertan</h2>
-        <p>{site.hermesDescription}</p>
-        <blockquote>{site.taskHu}</blockquote>
-        {site.taskEn ? <blockquote>{site.taskEn}</blockquote> : null}
+        <p>{hermesDescription}</p>
+        <blockquote>{test.taskHu}</blockquote>
+        {test.taskEn ? <blockquote>{test.taskEn}</blockquote> : null}
       </div>
       <div>
         <h3>Pontozási kategóriák</h3>

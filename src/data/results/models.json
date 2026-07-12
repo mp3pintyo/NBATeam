@@ -387,7 +387,7 @@
     "youtubeId": "fpLPsMR7g10",
     "summary": "Kiváló TODO-lista, azonnali skillkeresés és pontos projekt skill. Szép videót készített, de nem volt hang és figyelmen kívül hagyta a 9:16 arányt.",
     "scores": { "skills": null, "instruction": null, "research": null, "images": null, "video": null, "audio": null, "technical": null, "impression": null },
-    "overallScore": null
+    "overallScore": 7
   },
   {
     "id": "deepseek-v4-flash",
@@ -848,7 +848,7 @@
     "costUsd": 0.94,
     "costHuf": 282,
     "hasVideo": true,
-    "hasAudio": true,
+    "hasAudio": false,
     "hasImages": true,
     "usedSkills": true,
     "verticalCompliant": true,
@@ -947,7 +947,7 @@
     "status": "success",
     "statusLabel": "Informál",
     "durationMinutes": 10,
-    "tokensMillions": null,
+    "tokensMillions": 3,
     "displayedTokensThousands": null,
     "costUsd": 0,
     "costHuf": 0,
@@ -958,7 +958,7 @@
     "verticalCompliant": true,
     "youtubeId": "FEAWX2MVNHY",
     "summary": "Mindenről informál. Nincsen hang de a végén azonnal megkérdezte, hogy szeretnénk-e TTS-t.",
-    "scores": { "skills": null, "instruction": null, "research": null, "images": null, "video": null, "audio": null, "technical": null, "impression": null },
+    "scores": { "skills": null, "instruction": null, "research": null, "images": 10, "video": null, "audio": 0, "technical": null, "impression": null },
     "overallScore": 8.5
   }
 ]

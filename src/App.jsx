@@ -1,6 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
-import models from './data/models.json';
-import site from './data/site.json';
+import { hermesDescription, tests } from './data/tests.js';
 import { toggleComparison } from './lib/comparison.js';
 import {
   calculateAggregates,
@@ -17,6 +16,7 @@ import ModelDetail from './components/ModelDetail.jsx';
 import ModelGrid from './components/ModelGrid.jsx';
 import Podium from './components/Podium.jsx';
 import Scoreboard from './components/Scoreboard.jsx';
+import TestSwitcher from './components/TestSwitcher.jsx';
 
 export default function App() {
   const [query, setQuery] = useState('');
@@ -26,18 +26,14 @@ export default function App() {
   const [selectedIds, setSelectedIds] = useState([]);
   const [compareError, setCompareError] = useState(null);
   const [compareOpen, setCompareOpen] = useState(false);
+  const [activeTestId, setActiveTestId] = useState(tests[0].id);
+  const activeTest = tests.find((test) => test.id === activeTestId) ?? tests[0];
+  const models = activeTest.results;
   const modelCount = models.length;
-  const siteContent = useMemo(
-    () => ({
-      ...site,
-      subtitle: site.subtitle.replace('{modelCount}', String(modelCount)),
-    }),
-    [modelCount],
-  );
 
   const visibleModels = useMemo(
     () => sortModels(filterModels(models, { query, filter }), sort),
-    [query, filter, sort],
+    [models, query, filter, sort],
   );
   const selectedModels = selectedIds
     .map((id) => models.find((model) => model.id === id))
@@ -49,14 +45,24 @@ export default function App() {
     setCompareError(result.error);
   };
 
+  const handleTestChange = (testId) => {
+    setActiveTestId(testId);
+    setQuery('');
+    setFilter('all');
+    setDetailModel(null);
+    setSelectedIds([]);
+    setCompareOpen(false);
+    setCompareError(null);
+  };
+
   useEffect(() => {
-    const description = `${modelCount} nyelvi modell Hermes Agent tesztje: kutatás, skillhasználat és NBA HyperFrames videók összehasonlítása.`;
+    const description = `${activeTest.shortTitle}: ${modelCount} nyelvi modell Hermes Agent tesztje.`;
     const metaDescription = document.querySelector('meta[name="description"]');
 
     if (metaDescription) {
       metaDescription.setAttribute('content', description);
     }
-  }, [modelCount]);
+  }, [activeTest.shortTitle, modelCount]);
 
   return (
     <>
@@ -65,18 +71,20 @@ export default function App() {
       <nav className="nav" aria-label="Fő navigáció">
         <a className="brand" href="#top">Hermes <strong>Model League</strong></a>
         <div>
-          <a href="#ranglista">Ranglista</a>
+          <a href="#tesztek">Tesztek</a>
+          <a href="#ranglista">Teszt ranglista</a>
           <a href="#modellek">Modellek</a>
           <a href="#modszertan">Módszertan</a>
         </div>
       </nav>
       <main>
-        <Hero site={siteContent} modelCount={modelCount} />
+        <div id="tesztek"><TestSwitcher tests={tests} activeId={activeTest.id} onChange={handleTestChange} /></div>
+        <Hero test={activeTest} modelCount={modelCount} />
         <Scoreboard aggregates={calculateAggregates(models)} />
         <div id="ranglista"><Podium ranked={getRankedModels(models)} /></div>
         <section className="section field-section" id="modellek" aria-labelledby="field-title">
           <div className="section-heading">
-            <div><p className="eyebrow">A teljes mezőny</p><h2 id="field-title">Modellek</h2></div>
+            <div><p className="eyebrow">{activeTest.shortTitle}</p><h2 id="field-title">Modellek az aktív tesztben</h2></div>
             <p>{visibleModels.length} megjelenített modell · válassz legfeljebb hármat</p>
           </div>
           <Filters
@@ -94,11 +102,11 @@ export default function App() {
             onToggleCompare={handleToggleCompare}
           />
         </section>
-        <Methodology site={site} />
+        <Methodology test={activeTest} hermesDescription={hermesDescription} />
       </main>
       <footer>
         <a className="brand" href="#top">Hermes <strong>Model League</strong></a>
-        <p>{modelCount} modell. Egy feladat. Az adatok beszélnek.</p>
+        <p>{tests.length} teszt. Ugyanazok a modellek. Az adatok beszélnek.</p>
       </footer>
       <CompareTray
         models={selectedModels}
